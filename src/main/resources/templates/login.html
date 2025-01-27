@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Treiner Group - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  	<style>
+	    .cascading-right {
+	      margin-right: -50px;
+	    }
+	
+	    @media (max-width: 991.98px) {
+	      .cascading-right {
+	        margin-right: 0;
+	      }
+	    }
+	  </style>
+  <body>
+	<!-- Section: Design Block -->
+	<section class="text-center text-lg-start">
+	  <!-- Jumbotron -->
+	  <div class="container py-4">
+	    <div class="row g-0 align-items-center">
+	      <div class="col-lg-5 mb-4 mb-lg-0">
+	        <div class="card cascading-right bg-body-tertiary" style="
+	            backdrop-filter: blur(30px);
+	            ">
+	          <div class="card-body p-5 shadow-5 text-center">
+	            <h2 class="fw-bold mb-5">Treiner Group - Login testeeee</h2>
+	            <form action="/logar" method="POST">
+	              <!-- Nome input -->
+	              <div data-mdb-input-init class="form-outline mb-4">
+	                <label class="form-label" for="nome">Nome</label>
+	                <input type="text" id="nome" name="nome" class="form-control" />
+	              </div>
+
+	              <!-- Senha input -->
+	              <div data-mdb-input-init class="form-outline mb-4">
+	                <label class="form-label" for="senha">Senha</label>
+	                <input type="password" id="senha" name="senha" class="form-control" />
+	              </div>
+
+	              <!-- Submit button -->
+	              <div class="d-grid gap-2">
+	              <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Entrar</button>
+	              </div>
+	              <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+	            </form>
+	          </div>
+	        </div>
+	      </div>
+	
+	      <div class="col-lg-6 mb-5 mb-lg-0">
+	        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1M3weCVX4mc_qeD7fOC1z7hcHEvm1Qgt1Q&s" class="w-100 rounded-4 shadow-4" alt="" />
+	      </div>
+	    </div>
+	  </div>
+	</section>    
+	    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
